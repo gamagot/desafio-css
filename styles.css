@@ -1,0 +1,162 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bloco {
+    display: flex;
+    align-items: center;
+    /* centra verticalmente */
+    justify-content: center;
+    /* ou space-between, como preferir */
+    gap: 2rem;
+    /* espaço entre imagem e texto */
+    margin: 0 42px 108px;
+    /* replicando seu margin atual */
+}
+
+header {
+    margin: 47px 0 108px 42px;
+}
+
+.menu {
+    color: #17233D;
+    font-size: 14px;
+    font-weight: 400px;
+    letter-spacing: 0.875px;
+    padding-right: 36px;
+    cursor: pointer;
+}
+
+.button-header {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    border: 1px solid #4CB538;
+    background: #6FBF44;
+    width: 124px;
+    height: 51px;
+    cursor: pointer;
+}
+
+section {
+    display: inline-block;
+    margin-left: 96px;
+    padding-bottom: 100px;
+}
+
+img {
+    width: 595.178px;
+    height: 500.005px;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+h1 {
+    color: #161A49;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0.596px;
+    width: 582px;
+}
+
+p {
+    color: #4B505A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.button-section {
+    color: #6FBF44;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        width: 80%;
+    }
+
+    .button-header {
+        margin-left: auto;
+    }
+
+    .bloco {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        display: block;
+        /* evita o inline-block e seu whitespace */
+        margin: 0;
+        /* zera o margin-left de 96px */
+        padding: 0;
+        /* se quiser, zera também o padding-bottom */
+    }
+
+
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.596px;
+        width: 100%;
+        margin: 0;
+        padding: 0 50px;
+    }
+
+    p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.5px;
+        width: 100%;
+        margin: 0;
+        padding: 50px;
+    }
+
+    img {
+        max-width: 312px;
+        height: 288px;
+        margin: 0;
+        padding: 0;
+    }
+
+.button-section {
+    padding: 20px 50px;
+}
+
+}
